@@ -1,0 +1,16 @@
+def isDiv(val):
+    flag = True
+    for i in range(10,2,-1):
+        if val%i!=0:
+            flag = False
+            break
+    return flag
+
+result = 1
+while True:
+    print result
+    if isDiv(result):
+        break
+    result += 1
+
+print result
